@@ -1,0 +1,419 @@
+.upScreen {
+    // width: 100vw;
+    height: 1030px;
+    background: #1D2532;
+
+    position: relative;
+    z-index: 10;
+
+    margin-bottom: 195px;
+
+    @media (max-width: 740px) {
+        margin-bottom: 70px;
+    }
+
+    @media (max-width: 500px) {
+        height: 735px;
+    }
+
+    &__container {
+        @media (max-width: 1350px) {
+            width: 900px;
+        }
+
+        @media (max-width: 940px) {
+            width: 700px;
+        }
+
+        @media (max-width: 740px) {
+            width: 400px;
+        }
+
+        @media (max-width: 500px) {
+            width: 288px;
+        }
+    }
+
+    &__header {
+        // max-width: 1280px;
+        width: 100%;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        height: 55px;
+        align-items: center;
+
+        margin-bottom: 218px;
+
+        @media (max-width: 500px) {
+            justify-content: center;
+            padding-top: 15px;
+
+            margin-bottom: 48px;
+        }
+    }
+
+    &__logo {
+        font-size: 40px;
+        color: #FFFFFF;
+        display: flex;
+    }
+
+    &__rightBlock {
+        display: flex;
+        align-items: center;
+    }
+
+    &__ellipse26PurpleLogoCircle {
+        width: 41.05px;
+        height: 41.05px;
+
+        @media (max-width: 500px) {
+            width: 27.27px;
+            height: 27.27px;
+        }
+
+    }
+
+    &__logoText {
+        margin-left: 11px;
+
+        @media (max-width: 740px) {
+            font-size: 35px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__links {
+        @media (max-width: 740px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        color: #CECECE;
+        font-size: 23px;
+        line-height: 120%;
+        text-decoration: none;
+
+        &_marginLeft {
+            margin-left: 100px;
+
+            @media (max-width: 1350px) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__accountButtonBlock {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        margin-left: 150px;
+
+        @media (max-width: 1350px) {
+            margin-left: 50px;
+        }
+
+        @media (max-width: 940px) {
+            margin-left: 25px;
+        }
+
+        @media (max-width: 740px) {
+            display: none;
+        }
+    }
+
+    &__accountButton {
+        box-sizing: border-box;
+        width: 175px;
+        height: 51px;
+        border: 1px solid #FFFFFF;
+        border-radius: 15px;
+        color: #FFFFFF;
+        background: rgba($color: #FFFFFF, $alpha: 0);
+
+
+        &:hover {
+            color: #C3F33B;
+            border: 1px solid #C3F33B;
+        }
+
+        &:active {
+            background: rgba(224, 255, 172, 0.05);
+            backdrop-filter: blur(7.5px);
+        }
+
+        transition: 0.1s;
+    }
+
+    &__ellipse23UpLeft {
+        position: absolute;
+        width: 414.9px;
+        height: 414.9px;
+        left: -30px;
+        z-index: -1;
+
+        @media (max-width: 500px) {
+            width: 237.71px;
+            height: 237.71px;
+        }
+    }
+
+    &__menuButtonBlock {
+        margin-left: 150px;
+        display: none;
+
+        @media (max-width: 740px) {
+            display: block;
+        }
+
+        @media (max-width: 400px) {
+            margin-left: 80px;
+        }
+    }
+
+    &__menuButton {
+        width: 40px;
+        height: 16px;
+        border: none;
+        background: rgba($color: #FFFFFF, $alpha: 0);
+    }
+}
+
+.upScreen {
+    &__main {
+        display: flex;
+        color: #FFFFFF;
+        position: relative;
+        z-index: 10;
+
+        @media (max-width: 1350px) {
+            justify-content: center;
+        }
+
+    }
+
+    &__mainLeftBlock {
+        display: flex;
+        flex-direction: column;
+        width: 717px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 740px) {
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: 72px;
+        line-height: 105%;
+        letter-spacing: -0.03em;
+
+        margin-bottom: 34px;
+
+        @media (max-width: 1350px) {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 25px;
+            width: 248px;
+
+            margin-bottom: 16px;
+        }
+
+        &_bold {
+            font-weight: 900;
+            letter-spacing: -0.01em;
+        }
+
+    }
+
+    &__description {
+        font-size: 23px;
+        line-height: 120%;
+        color: #CECECE;
+        width: 500px;
+
+        margin-bottom: 75px;
+
+        @media (max-width: 1350px) {
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 18px;
+            width: 239px;
+
+            margin-bottom: 40px;
+        }
+    }
+
+    &__nftButton {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        color: #242424;
+
+        width: 331px;
+        height: 66px;
+        background: linear-gradient(92.84deg, #1DD844 1.44%, #CBF62E 126.29%);
+        box-shadow: 0px 0px 10px 2px rgb(29, 216, 69);
+        border-radius: 20px;
+        border: 0;
+
+        &:hover {
+            box-shadow: 0px 0px 20px 7px rgb(29, 216, 69);
+        }
+
+        &:active {
+            box-shadow: 0px 0px 15px 2px rgb(29, 216, 69);
+        }
+
+        transition: 0.2s;
+
+        @media (max-width: 1350px) {
+            // font-size: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 16px;
+            height: 50px;
+        }
+    }
+
+    &__mainRightBlock {
+
+        // position: relative;
+        @media (max-width: 1350px) {
+            display: none;
+        }
+    }
+
+    &__manImg {
+        width: 920px;
+        height: 815px;
+        position: absolute;
+        right: -105px;
+        top: -140px;
+        z-index: -1;
+
+        @media (max-width: 1500px) {
+            width: 700px;
+            height: 600px;
+            right: -10px;
+            top: -60px;
+        }
+    }
+
+    &__man1ImgBlock {
+        display: none;
+
+        @media (max-width: 500px) {
+            display: block;
+
+            margin-bottom: 16px;
+        }
+    }
+
+    &__man1Img {
+        @media (max-width: 500px) {
+            width: 300px;
+            height: 321px;
+        }
+    }
+}
+
+.upScreen {
+    &__burgerMenuBlock {
+        z-index: 12;
+        overflow: auto;
+        z-index: 11;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        width: 100%;
+        height: 100%;
+
+        background: rgba(48, 9, 97, 0.3);
+        backdrop-filter: blur(7.5px);
+
+        &__show {
+            display: flex;
+        }
+    }
+
+    &__burgerMenu {
+        width: 400px;
+        height: 392px;
+        left: 340px;
+        top: 0px;
+        position: absolute;
+        box-sizing: border-box;
+        padding: 24px 20px;
+
+        background: #293344;
+        border-radius: 0px 0px 0px 30px;
+        // z-index: 12;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logoBurgerMenu {
+        @media (max-width: 740px) {
+            margin-bottom: 62.8px;
+        }
+    }
+
+    &__linksBurgerMenu {
+        @media (max-width: 740px) {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__linkBurgerMenu {
+        margin-bottom: 20px;
+    }
+
+    &__link_marginLeftBurgerMenu {
+        margin-left: 0px;
+    }
+
+    &__accountButtonBlockBurgerMenu {
+        @media (max-width: 740px) {
+            display: block;
+        }
+    }
+
+    &__closeButtonBurgerMenu {
+        height: 22px;
+        width: 22px;
+        right: 27px;
+        top: 31px;
+        position: absolute;
+
+    }
+}

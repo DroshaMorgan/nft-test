@@ -1,0 +1,225 @@
+.infoBlock {
+    position: relative;
+    height: 1093px;
+    box-sizing: border-box;
+
+    background: linear-gradient(212.69deg, #323E51 4.9%, #1D2532 55.16%);
+    border-radius: 20px;
+
+    padding-top: 130px;
+    z-index: 0;
+
+    margin-bottom: 200px;
+
+    @media (max-width: 1350px) {
+        height: 1497px;
+        padding-top: 40px;
+    }
+
+    &__container {
+        @media (max-width: 1350px) {
+            width: 900px;
+        }
+
+        @media (max-width: 940px) {
+            width: 700px;
+        }
+
+        @media (max-width: 740px) {
+            width: 400px;
+        }
+
+        @media (max-width: 500px) {
+            width: 320px;
+        }
+    }
+
+    &__titleBlock {
+        margin-bottom: 65px;
+        position: relative;
+
+        @media (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+
+        @media (max-width: 1350px) {
+            font-size: 35px;
+        }
+
+        @media (max-width: 940px) {
+            font-size: 23px;
+        }
+
+        @media (max-width: 500px) {
+            width: 180px;
+            text-align: center;
+        }
+    }
+
+    &__ellipse26Blue {
+        position: absolute;
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        left: 172px;
+        top: -20px;
+
+        background: radial-gradient(63.25% 73.53% at 65.32% 77.65%, #045DFA 0%, #0FC1D7 83.16%, #06F6C7 100%);
+        transform: rotate(7.77deg);
+
+        @media (max-width: 1350px) {
+            left: 60px;
+            width: 50px;
+            height: 50px;
+        }
+
+        @media (max-width: 740px) {
+            left: 20px;
+            top: 4px;
+            width: 21.91px;
+            height: 21.91px;
+        }
+    }
+
+    &__cardsBlock {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 70px 50px;
+
+        padding: 0 315px;
+
+        @media (max-width: 1350px) {
+            padding: 0;
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-sizing: border-box;
+        width: 300px;
+        height: 310px;
+        background: rgba(51, 62, 81, 0.7);
+        color: #FFFFFF;
+        backdrop-filter: blur(30.5px);
+        border-radius: 20px;
+
+        padding: 45px 20px 0;
+
+        box-shadow: 0px 33px 1px -15px rgba(51, 62, 81, 0.6);
+
+        @media (max-width: 1350px) {
+            width: 260px;
+            height: 273px;
+        }
+    }
+
+    &__imgBlock {
+        margin-bottom: 18px;
+    }
+
+    &__img {
+        width: 83px;
+        height: 83px;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 19px;
+        line-height: 25px;
+        letter-spacing: -0.7px;
+
+        @media (max-width: 1350px) {
+            font-size: 16px;
+        }
+
+    }
+
+    &__ellipse23UpRight {
+        position: absolute;
+        width: 440.01px;
+        height: 440.01px;
+        left: 785px;
+        top: 0px;
+        z-index: -1;
+
+        @media (max-width: 1350px) {
+            width: 137.41px;
+            height: 137.41px;
+            left: 680px;
+        }
+
+        @media (max-width: 940px) {
+            width: 137.41px;
+            height: 137.41px;
+            left: 100px;
+        }
+    }
+
+    &__ellipse23BottomLeft {
+        position: absolute;
+        width: 440.01px;
+        height: 440.01px;
+        left: 45px;
+        bottom: 25px;
+        z-index: -1;
+
+        @media (max-width: 1350px) {
+            display: none;
+        }
+    }
+
+    &__ellipse26PurpleUpRight {
+        position: absolute;
+        width: 151.89px;
+        height: 151.89px;
+        right: 117px;
+        top: -95px;
+        z-index: -1;
+
+        @media (max-width: 740px) {
+            right: 17px;
+            top: -64px;
+            width: 87.59px;
+            height: 87.59px;
+        }
+    }
+
+    &__ellipse25BottomRight {
+        position: absolute;
+        width: 131.66px;
+        height: 131.66px;
+        right: 156px;
+        bottom: 123px;
+        z-index: -1;
+
+        @media (max-width: 1350px) {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        @media (max-width: 500px) {
+            width: 62.86px;
+            height: 62.86px;
+            bottom: 20px;
+            right: 25px;
+        }
+    }
+}
