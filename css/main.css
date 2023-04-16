@@ -347,6 +347,9 @@ body {
   }
 }
 
+.upScreen__burgerMenuBlock {
+  display: none;
+}
 @media (max-width: 740px) {
   .upScreen__burgerMenuBlock {
     z-index: 12;

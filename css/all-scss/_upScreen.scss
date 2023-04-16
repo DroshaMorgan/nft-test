@@ -344,6 +344,8 @@
 
 .upScreen {
     &__burgerMenuBlock {
+        display: none;
+
         @media (max-width: 740px) {
             z-index: 12;
             overflow: auto;
