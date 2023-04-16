@@ -347,27 +347,29 @@ body {
   }
 }
 
-.upScreen__burgerMenuBlock {
-  z-index: 12;
-  overflow: auto;
-  z-index: 11;
-  position: fixed;
-  top: 0;
-  right: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background: rgba(48, 9, 97, 0.3);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
-}
-.upScreen__burgerMenuBlock__show {
-  display: flex;
+@media (max-width: 740px) {
+  .upScreen__burgerMenuBlock {
+    z-index: 12;
+    overflow: auto;
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 9, 97, 0.3);
+    -webkit-backdrop-filter: blur(7.5px);
+            backdrop-filter: blur(7.5px);
+  }
+  .upScreen__burgerMenuBlock__show {
+    display: flex;
+  }
 }
 .upScreen__burgerMenu {
   width: 400px;
   height: 392px;
-  left: 340px;
+  right: 0px;
   top: 0px;
   position: absolute;
   box-sizing: border-box;
@@ -376,6 +378,17 @@ body {
   border-radius: 0px 0px 0px 30px;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 740px) {
+  .upScreen__burgerMenu {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .upScreen__burgerMenu {
+    width: 304px;
+    height: 392px;
+  }
 }
 @media (max-width: 740px) {
   .upScreen__logoBurgerMenu {
@@ -399,6 +412,11 @@ body {
 @media (max-width: 740px) {
   .upScreen__accountButtonBlockBurgerMenu {
     display: block;
+  }
+}
+@media (max-width: 500px) {
+  .upScreen__accountButtonBlockBurgerMenu {
+    margin-left: 0px;
   }
 }
 .upScreen__closeButtonBurgerMenu {
@@ -664,12 +682,23 @@ body {
   padding: 56px 70px;
   box-sizing: border-box;
 }
+@media (max-width: 740px) {
+  .movieModal {
+    width: 320px;
+    height: 337px;
+    padding: 45px 16px;
+  }
+}
 .movieModal__container {
   width: 471px;
 }
+@media (max-width: 740px) {
+  .movieModal__container {
+    width: 288px;
+  }
+}
 .movieModal__text {
   width: 100%;
-  padding: 10px;
   text-align: left;
   box-sizing: border-box;
 }
@@ -680,10 +709,21 @@ body {
   letter-spacing: -0.03em;
   margin-bottom: 25px;
 }
+@media (max-width: 740px) {
+  .movieModal__title {
+    font-size: 23px;
+  }
+}
 .movieModal__description {
   font-size: 21px;
   line-height: 120%;
   margin-bottom: 35px;
+}
+@media (max-width: 740px) {
+  .movieModal__description {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
 }
 .movieModal__input {
   padding: 15px 268px 15px 20px;
@@ -694,18 +734,41 @@ body {
   box-sizing: border-box;
   margin-bottom: 18px;
 }
+@media (max-width: 740px) {
+  .movieModal__input {
+    width: 288px;
+    height: 49px;
+  }
+}
 .movieModal__closeButton {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+@media (max-width: 740px) {
+  .movieModal__closeButton {
+    width: 17px;
+    height: 17px;
+  }
 }
 
 .bottomBlock__modalNftButton {
   width: 471px;
   height: 52px;
 }
+@media (max-width: 740px) {
+  .bottomBlock__modalNftButton {
+    width: 288px;
+    height: 49px;
+  }
+}
 
 .stopScrollong {
   height: 100%;
   overflow: hidden;
+}
+@media (min-width: 740px) {
+  .stopScrollong {
+    overflow: scroll;
+  }
 }/*# sourceMappingURL=main.css.map */

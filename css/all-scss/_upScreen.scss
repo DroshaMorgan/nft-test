@@ -344,28 +344,36 @@
 
 .upScreen {
     &__burgerMenuBlock {
-        z-index: 12;
-        overflow: auto;
-        z-index: 11;
-        position: fixed;
-        top: 0;
-        right: 0;
-        display: none;
-        width: 100%;
-        height: 100%;
+        @media (max-width: 740px) {
+            z-index: 12;
+            overflow: auto;
+            z-index: 11;
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: none;
+            // display: flex;
+            width: 100%;
+            height: 100%;
 
-        background: rgba(48, 9, 97, 0.3);
-        backdrop-filter: blur(7.5px);
+            background: rgba(48, 9, 97, 0.3);
+            backdrop-filter: blur(7.5px);
 
-        &__show {
-            display: flex;
+            &__show {
+                display: flex;
+            }
         }
+
     }
 
     &__burgerMenu {
+        @media (min-width: 740px) {
+            display: none;
+        }
+
         width: 400px;
         height: 392px;
-        left: 340px;
+        right: 0px;
         top: 0px;
         position: absolute;
         box-sizing: border-box;
@@ -377,6 +385,11 @@
 
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 500px) {
+            width: 304px;
+            height: 392px;
+        }
     }
 
     &__logoBurgerMenu {
@@ -405,6 +418,10 @@
     &__accountButtonBlockBurgerMenu {
         @media (max-width: 740px) {
             display: block;
+        }
+
+        @media (max-width: 500px) {
+            margin-left: 0px;
         }
     }
 

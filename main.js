@@ -4,7 +4,6 @@ const openModal = document.querySelector('.upScreen__nftButton');
 openModal.addEventListener('click', (e) => {
     modalEl.classList.add('modalBlock__show');
     document.body.classList.add('stopScrollong');
-
 })
 
 modalEl.innerHTML = `
@@ -42,5 +41,35 @@ window.addEventListener("click", (e) => {
 window.addEventListener("keydown", (e) => {
     if (e.keyCode === 27) {
         closeModal();
+    }
+})
+
+
+
+const burgerMenuEl = document.querySelector('.upScreen__burgerMenuBlock');
+const upScreenMenuButtonEl = document.querySelector('.upScreen__menuButton');
+
+upScreenMenuButtonEl.addEventListener('click', (e) => {
+    burgerMenuEl.classList.add('modalBlock__show');
+    document.body.classList.add('stopScrollong');
+})
+
+const bottomCloseBurgerMenu = document.querySelector('.upScreen__closeButtonBurgerMenu');
+bottomCloseBurgerMenu.addEventListener('click', () => closeModalBurgerMenu());
+
+function closeModalBurgerMenu() {
+    burgerMenuEl.classList.remove('modalBlock__show');
+    document.body.classList.remove('stopScrollong');
+}
+
+window.addEventListener("click", (e) => {
+    if (e.target === burgerMenuEl) {
+        closeModalBurgerMenu();
+    }
+})
+
+window.addEventListener("keydown", (e) => {
+    if (e.keyCode === 27) {
+        closeModalBurgerMenu();
     }
 })
